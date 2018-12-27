@@ -1,0 +1,7 @@
+--- Start thrift
+
+hbase thrift start -p 9090 --infoport 9095 &
+
+-- Start hue
+
+sudo docker run -dt --name hue -p 8888:8888 gethue/hue
