@@ -1,7 +1,15 @@
 --- Start thrift
 
 hbase thrift start -p 9090 --infoport 9095 &
+hbase rest start -p 9080 --infoport 9085 &
 
 -- Start hue
 
 sudo docker run -dt --name hue -p 8888:8888 gethue/hue
+
+
+-- Install ODBC
+install unixodbc , unixodbc-bin ?
+
+-- .NET Core and ODBC
+https://codefarm.me/2017/11/16/cloudera-odbc-driver-for-impala-on-debian-linux-with-.net-core-2.0/

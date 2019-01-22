@@ -1,0 +1,3 @@
+curl -vi -X GET \
+  -H "Accept: text/xml" \
+  "http://localhost:9080/version/cluster"
