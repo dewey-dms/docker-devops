@@ -11,5 +11,16 @@ sudo docker run -dt --name hue -p 8888:8888 gethue/hue
 -- Install ODBC
 install unixodbc , unixodbc-bin ?
 
+
+-- HIVE ODBC_DRIVER
+https://hortonworks.com/downloads/
+
+
+-- Configuration ODBC_SOURCE /etc/odbcinst.ini
+[Hive]
+Driver = /usr/lib/hive/lib/native/Linux-amd64-64/libhortonworkshiveodbc64.so
+
+
+
 -- .NET Core and ODBC
 https://codefarm.me/2017/11/16/cloudera-odbc-driver-for-impala-on-debian-linux-with-.net-core-2.0/
