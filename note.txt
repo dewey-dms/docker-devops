@@ -1,7 +1,14 @@
 --- Start thrift
 
+sudo docker exec -ti hbase /bin/bash
 hbase thrift start -p 9090 --infoport 9095 &
 hbase rest start -p 9080 --infoport 9085 &
+
+
+-- add to /etc/hosts
+
+127.0.0.1       datanode
+
 
 -- Start hue
 
